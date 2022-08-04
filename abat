@@ -1,0 +1,42 @@
+<!-- <script type="text/javascript" src="js/tableExport/jquery.js"></script>
+<script type="text/javascript" src="js/tableExport/tableExport.js"></script>
+<script type="text/javascript" src="js/tableExport/jquery.base64.js"></script>
+
+<script src="js/excelexport.js" integrity="sha512-XmZS54be9JGMZjf+zk61JZaLZyjTRgs41JLSmx5QlIP5F+sSGIyzD2eJyxD4K6kGGr7AsVhaitzZ2WTfzpsQzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+<script type="text/javascript">
+$(document).ready(function(e){
+$("#xml").click(function(e){
+	console.log("clicked!!!"); -->
+	// $("#myTable").tableExport({
+	// 	type: 'xml',
+	// 	escape: 'false'
+	// });
+	// var xml = '<xml version="1.0" encoding="UTF-8"?><Root><Classes>';
+    //         var tritem = document.getElementById("myTable").getElementsByTagName("tr");
+    //         for (i = 1; i < tritem.length; i++) { //<--------------Change the counter to 1 to escape first column header
+    //             var celldata = tritem[i];
+    //             if (celldata.cells.length > 0) {
+    //                 xml += "<Class name='" + celldata.cells[0].textContent + "'>\n";
+    //                 for (var m = 1; m < celldata.cells.length; ++m) {
+
+    //                     var selects = celldata.getElementsByTagName('select')                                        //   <----------- To get select list selected value                              
+    //                     xml += "\t<data>" + selects[m - 1].options[selects[m - 1].selectedIndex].text + "</data>\n"; //   <-----------
+                        
+    //                     //xml += "\t<data>" + celldata.cells[m].textContent + "</data>\n";
+    //                 }
+    //                 xml += "</Class >\n";
+    //             }
+    //         }
+    //         xml += '</Classes></Root>';
+    //         window.alert(xml);
+	TableExport(document.getElementsByTagName("myTable"), {
+    filename: 'excelfile',            
+    sheetname: "sheet1"                     
+});
+
+
+
+});
+});
