@@ -10,7 +10,8 @@ define("TABLES", '*'); // Full backup
 define('IGNORE_TABLES',array(
     'tbl_token_auth',
     'token_auth'
-)); // Tables to ignore
+)); 
+// Tables to ignore
 define("CHARSET", 'utf8');
 define("GZIP_BACKUP_FILE", true); // Set to false if you want plain SQL backup files (not gzipped)
 define("DISABLE_FOREIGN_KEY_CHECKS", true); // Set to true if you are having foreign key constraint fails
